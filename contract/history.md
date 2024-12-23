@@ -1,6 +1,7 @@
 # Target
 finish a FA contract to mint PNTs
 
+## Initial Setup
 config .env
 
 npm run move:publish
@@ -30,3 +31,17 @@ Code was successfully deployed to object address 0x58280cfaf5cedc94b2dd4ba0e053f
 
 ```
 FA address: 0xee3ff47098abfc3640a626732dac235dfdd807b563d806ee8c20460f22d1df85
+
+
+## Mint
+```
+imulation error
+Request to [Fullnode]: GET https://api.mainnet.aptoslabs.com/v1/accounts/0x3f2bb5c649e701c17e9a092e913c8884219ab8e6ed67c814c026f743f68cd2a3 (trace_id:44ed3dca0089d0905114dee5cd0dbff9) failed with: {"message":"Account not found by Address(0x3f2bb5c649e701c17e9a092e913c8884219ab8e6ed67c814c026f743f68cd2a3) and Ledger version(2086015655)","error_code":"account_not_found","vm_error_code":null}
+```
+
+0.000973APT ,if API price is 10 USDT
+then the cost of minting (one time) is 0.00973 USDT=0.331THB
+if APT price is 100 USDT, then the cost of minting (one time) is 0.0973 USDT=3.31THB
+So points minting should be async, and the cost should be paid by the user.
+
+and we can offer batch minting for the user.(if Aptos API supports it)
