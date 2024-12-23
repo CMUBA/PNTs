@@ -1,22 +1,21 @@
-import Placeholder1 from "@/assets/placeholders/asset.png";
+import Points from "@/assets/placeholders/points.png";
 
 export const config: Config = {
   // Removing one or all of these socials will remove them from the page
   socials: {
-    twitter: "https://twitter.com",
-    discord: "https://discord.com",
-    homepage: "#",
+    twitter: "https://twitter.com/cmuba_th",
+    homepage: "https://arcadia.cmuba.org",
   },
 
   defaultAsset: {
-    name: "Tempor Ea Sunt",
-    image: Placeholder1,
+    name: "Points",
+    image: Points,
   },
 
   ourStory: {
-    title: "Reprehenderit Do Anim In",
-    description: `Veniam ut aliqua quis non dolore nostrud labore elit proident dolore. Elit non consectetur dolore est nostrud cupidatat dolore incididunt elit veniam pariatur irure pariatur. Consectetur incididunt tempor aute dolore deserunt et enim occaecat non excepteur labore magna. Laboris commodo nostrud dolore Lorem ex occaecat sunt id id sint proident amet Lorem Lorem.`,
-    discordLink: "https://discord.com",
+    title: "Points: Yet Another Points in Game and Business",
+    description: "Triple Revolution for Your Consumption, Your Business. Limited On-chain Points for your consumption, your business.",
+    socialLink: "https://arcadia.cmuba.org/business",
   },
 };
 
@@ -36,6 +35,6 @@ export interface Config {
     title: string;
     subTitle?: string;
     description: string;
-    discordLink: string;
+    socialLink: string;
   };
 }
